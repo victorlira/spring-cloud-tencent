@@ -70,10 +70,13 @@
 	</developers>
 
 	<properties>
+		<!-- Project revision -->
 		<revision>1.14.0-2020.0.6-SNAPSHOT</revision>
 
+		<!-- Polaris SDK version -->
+		<polaris.version>1.15.3</polaris.version>
+
 		<!-- Dependencies -->
-		<polaris.version>1.15.0</polaris.version>
 		<guava.version>32.0.1-jre</guava.version>
 		<logback.version>1.2.13</logback.version>
 		<springdoc.version>1.7.0</springdoc.version>
@@ -94,13 +97,14 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<artifactId>polaris-dependencies</artifactId>
-				<groupId>com.tencent.polaris</groupId>
-				<version>${polaris.version}</version>
+				<groupId>com.fasterxml.jackson</groupId>
+				<artifactId>jackson-bom</artifactId>
+				<version>${jackson.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
 
+			<!-- polaris starter -->
 			<dependency>
 				<groupId>com.tencent.cloud</groupId>
 				<artifactId>spring-cloud-tencent-commons</artifactId>
@@ -125,7 +129,6 @@
 				<version>${revision}</version>
 			</dependency>
 
-			<!--	polaris starter-->
 			<dependency>
 				<groupId>com.tencent.cloud</groupId>
 				<artifactId>spring-cloud-starter-tencent-polaris-ratelimit</artifactId>
@@ -221,24 +224,6 @@
 			</dependency>
 
 			<dependency>
-				<groupId>com.fasterxml.jackson.core</groupId>
-				<artifactId>jackson-annotations</artifactId>
-				<version>${jackson.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>com.fasterxml.jackson.core</groupId>
-				<artifactId>jackson-core</artifactId>
-				<version>${jackson.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>com.fasterxml.jackson.core</groupId>
-				<artifactId>jackson-databind</artifactId>
-				<version>${jackson.version}</version>
-			</dependency>
-
-			<dependency>
 				<groupId>org.springdoc</groupId>
 				<artifactId>springdoc-openapi-ui</artifactId>
 				<version>${springdoc.version}</version>
@@ -283,6 +268,14 @@
 				<scope>test</scope>
 			</dependency>
 
+			<!-- polaris SDK-->
+			<dependency>
+				<artifactId>polaris-dependencies</artifactId>
+				<groupId>com.tencent.polaris</groupId>
+				<version>${polaris.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
