@@ -24,3 +24,4 @@
 - [fix:fix reporter wrong initialization when using config data.](https://github.com/Tencent/spring-cloud-tencent/pull/1221)
 - [fix:fix swagger not working bug.](https://github.com/Tencent/spring-cloud-tencent/pull/1224)
 - fix:fix restTemplateCustomizer bean conflict causing service to fail to start properly.
+- fix:fix NullPointerException when properties contain kv with null value.
