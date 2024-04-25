@@ -116,6 +116,11 @@ public final class PolarisConfigListenerContext {
 	 * @param ret origin properties map
 	 */
 	static void initialize(Map<String, Object> ret) {
+		for (Map.Entry<String, Object> entry : ret.entrySet()) {
+			if (entry.getValue() == null) {
+				ret.put(entry.getKey(), "");
+			}
+		}
 		properties.putAll(ret);
 	}
 
@@ -142,6 +147,9 @@ public final class PolarisConfigListenerContext {
 			ret.keySet().parallelStream().forEach(key -> {
 				Object oldValue = properties.getIfPresent(key);
 				Object newValue = ret.get(key);
+				if (newValue == null) {
+					newValue = "";
+				}
 				if (oldValue != null) {
 					if (!newValue.equals(oldValue)) {
 						properties.put(key, newValue);
