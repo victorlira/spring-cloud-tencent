@@ -5,8 +5,8 @@
 [![Contributors](https://img.shields.io/github/contributors/Tencent/spring-cloud-tencent)](https://github.com/Tencent/spring-cloud-tencent/graphs/contributors)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
-[![Test with Junit](https://github.com/Tencent/spring-cloud-tencent/actions/workflows/junit_test.yml/badge.svg?branch=2021.0)](https://github.com/Tencent/spring-cloud-tencent/actions/workflows/junit_test.yml)
-[![codecov.io](https://codecov.io/gh/Tencent/spring-cloud-tencent/branch/2021.0/graph/badge.svg)](https://codecov.io/gh/Tencent/spring-cloud-tencent?branch=2021.0)
+[![Test with Junit](https://github.com/Tencent/spring-cloud-tencent/actions/workflows/junit_test.yml/badge.svg?branch=2021)](https://github.com/Tencent/spring-cloud-tencent/actions/workflows/junit_test.yml)
+[![codecov.io](https://codecov.io/gh/Tencent/spring-cloud-tencent/branch/2021/graph/badge.svg)](https://codecov.io/gh/Tencent/spring-cloud-tencent?branch=2021)
 
 English | [简体中文](./README-zh.md)
 
@@ -63,7 +63,7 @@ dependencies.
 
 > Notice:
 >
-> Support Spring Cloud 2023.0, 2022.0, 2021.0, 2020.0, Hoxton.
+> Support Spring Cloud 2023, 2022, 2021, 2020, Hoxton.
 >
 > The version list of Spring Cloud Tencent can be found
 > in

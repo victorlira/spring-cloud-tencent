@@ -7,14 +7,14 @@ on:
   push:
     branches:
       - hoxton
-      - 2021.0
-      - 2020.0
+      - 2021
+      - 2020
       - greenwich
   pull_request:
     branches:
       - hoxton
-      - 2021.0
-      - 2020.0
+      - 2021
+      - 2020
       - greenwich
 
 jobs:
